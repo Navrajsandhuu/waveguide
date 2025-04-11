@@ -1,12 +1,12 @@
-# 📡 TEₘₙ Mode Visualization in Rectangular Waveguides
+# TEₘₙ Mode Visualization in Rectangular Waveguides
 
 This project is an interactive 3D visualization tool for exploring **transverse electric (TEₘₙ) modes** in rectangular waveguides using **Python**, **Plotly**, and **Jupyter Notebook**.
 
 It simulates the electric field magnitude inside a waveguide and renders the field distribution in 3D using a realistic, FEM-style block visualization with a true-to-scale rectangular prism geometry.
 
----
 
-## 📐 Features
+
+## Features
 
 - Adjustable sliders for mode indices `m` and `n` (TEₘₙ modes)
 - Real-time 3D electric field magnitude visualization
@@ -14,9 +14,9 @@ It simulates the electric field magnitude inside a waveguide and renders the fie
 - Rotatable, zoomable, and interactive view using Plotly
 - Continuous block-style field rendering (no gaps between voxels)
 
----
 
-## 🚀 Getting Started
+
+## Getting Started
 
 ### Requirements
 
