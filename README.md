@@ -1,33 +1,35 @@
-# TEₘₙ Mode Visualization in Rectangular Waveguides
+# 3D Waveguide Mode Simulator (TEₘₙ / TMₘₙ)
 
-This project is an interactive 3D visualization tool for exploring **transverse electric (TEₘₙ) modes** in rectangular waveguides using **Python**, **Plotly**, and **Jupyter Notebook**.
+This is an interactive simulator for visualizing electromagnetic field propagation in rectangular waveguides using Jupyter Notebook. The tool supports both TE and TM modes and provides real-time 3D visualizations alongside analytical plots of phase constant and effective refractive index.
 
-It simulates the electric field magnitude inside a waveguide and renders the field distribution in 3D using a realistic, FEM-style block visualization with a true-to-scale rectangular prism geometry.
-
-
+---
 
 ## Features
 
-- Adjustable sliders for mode indices `m` and `n` (TEₘₙ modes)
-- Real-time 3D electric field magnitude visualization
-- True geometric scaling (e.g., 1.0 × 0.5 × 5.0 waveguide at 10 GHz)
-- Rotatable, zoomable, and interactive view using Plotly
-- Continuous block-style field rendering (no gaps between voxels)
+- Supports TEₘₙ and TMₘₙ modes with adjustable mode indices `m`, `n`
+- Interactive 3D visualization of electric or magnetic field magnitudes
+- Real-time plots:
+  - Phase constant βₘₙ vs frequency
+  - Effective refractive index nₑff vs frequency
+- Cutoff frequency detection and display
+- Adjustable simulation parameters:
+  - Frequency (GHz): 0.1 to 15.0  
+  - Width `a` (m): 0.1 to 3.0  
+  - Height `b` (m): 0.1 to 3.0  
+  - Length `L` (m): 1.0 to 10.0  
 
+---
 
+## Requirements
 
-## Getting Started
-
-### Requirements
-
-- Python 3.7+
+- Python 3.8+
 - Jupyter Notebook
-- ipywidgets
-- numpy
-- plotly
+- Packages:
+  - numpy
+  - plotly
+  - ipywidgets
 
-### Installation
+Install dependencies via:
 
 ```bash
 pip install numpy plotly ipywidgets
-jupyter nbextension enable --py widgetsnbextension --sys-prefix
